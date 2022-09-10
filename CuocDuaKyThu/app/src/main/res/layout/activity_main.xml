@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkboxThree"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606"
+        tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck" />
+
+    <CheckBox
+        android:id="@+id/checkboxTwo"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_above="@id/checkboxThree"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <CheckBox
+        android:id="@+id/checkboxOne"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/checkboxTwo"
+        tools:ignore="MissingConstraints,UnknownId,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <SeekBar
+        android:id="@+id/seekbarTow"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/checkboxThree"
+        android:thumb="@drawable/pika"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.586"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="71dp"
+        android:layout_height="54dp"
+        android:layout_above="@+id/seekbarTow"
+        android:layout_toEndOf="@id/checkboxTwo"
+        android:thumb="@drawable/chadora"
+        app:layout_constraintBottom_toTopOf="@+id/seekbarOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <SeekBar
+        android:id="@+id/seekbarOne"
+        android:layout_width="73dp"
+        android:layout_height="51dp"
+        android:layout_above="@+id/seekbarTow"
+        android:layout_toEndOf="@+id/checkboxOne"
+        android:thumb="@drawable/rung"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="730dp"
+        android:layout_height="118dp"
+        android:background="@color/purple_500"
+        android:backgroundTint="@color/purple_500"
+        android:backgroundTintMode="screen"
+        android:text="@string/cu_c_ua_k_th"
+        android:textColor="#E1BEE7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewDiemSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="#ff33"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <ImageButton
+        android:id="@+id/buttonplay"
+        android:layout_width="138dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@drawable/play"
+        tools:layout_editor_absoluteX="343dp"
+        tools:layout_editor_absoluteY="129dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
